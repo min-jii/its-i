@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  cursor: crosshair;
+  animation: fadein 3.5s;
+  -webkit-animation: fadein 3.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+::selection {
+  background-color: transparent;
+  color: springgreen;
+}
+
+body {
+  margin-left: 6.8vw;
+  margin-right: 6.8vw;
+  font-family: Pretendard, sans-serif;
+  font-size: 16px;
+  word-break: keep-all;
+  background-color: black;
+
+  -ms-overflow-style: none;
+  }
+ 
+  ::-webkit-scrollbar {
+    display: none;   
+}
+
+img {
+  border-radius: 3%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+a:hover {
+  cursor: help;
+}
+
+.cards {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 2.2vw 3vw;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4vw 2vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2vw 1.7vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1vw 1.4vw;
+  }
+}
+
+.figure {
+  position: relative;
+  width: 100%;
+}
+
+.figure img.txt.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .4s;
+  cursor: help;
+}
+
+.figure:hover img.txt.image-hover {
+  opacity: 1;
+}
+
+.figure2 {
+  position: relative;
+  width: 100%;
+}
+
+.figure2 img.txt.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .4s;
+  cursor: help;
+}
+
+.figure2:hover img.txt.image-hover {
+  opacity: 1;
+}
+
+.figure3 {
+  position: relative;
+  width: 100%;
+}
+
+.figure3 img.txt.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .4s;
+  cursor: help;
+}
+
+.figure3:hover img.txt.image-hover {
+  opacity: 1;
+}

@@ -1,0 +1,326 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  cursor: crosshair;
+  animation: fadein 3.5s;
+  -webkit-animation: fadein 3.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+::selection {
+  background-color: transparent;
+  color: springgreen;
+}
+
+body {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  padding-right: 1vw;
+  font-family: Pretendard, sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+  word-break: keep-all;
+  color: white;
+  background-color: black;
+  padding-top: 3vh;
+
+  -ms-overflow-style: none;
+  }
+ 
+  ::-webkit-scrollbar {
+    display: none;   
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1vw 1vw;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr 3fr;
+    gap: 1vw 1vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr 3fr;
+    gap: 1vw 1vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 3fr;
+    gap: 1vw 1vw;
+  }
+}
+
+.full {
+  width: 100%;
+  height: calc(100vh - 7vh);
+  background-color: white;
+}
+
+.slideshow {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  border-top: .04rem solid darkgray;
+  border-bottom: .04rem solid darkgray;
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+
+.text-button:hover {
+  color: springgreen;
+  animation: blink-effect 0.6s step-end 0s infinite;
+  cursor: help;
+}
+
+@keyframes blink-effect {
+  50% {
+    color: white;
+    opacity: 1;
+  }
+} 
+
+h1 {
+  font-size: 3.8vw;
+  font-weight: 800;
+  line-height: 1.6;
+  word-break: keep-all;
+  margin-bottom: .6vw;
+}
+
+p {
+  font-size: 3.8vw;
+  font-weight: 800;
+  line-height: 1.6;
+  word-break: keep-all;
+  padding-left: 2.2vw;
+}
+
+.last {
+  margin-bottom: 5vw;
+}
+
+.last2 {
+  margin-bottom: 8vw;
+}
+
+h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;  
+  font-weight: 800;
+  color: white;
+}
+
+ol {
+  list-style: none;
+  margin-bottom: 1vw;
+}
+
+details, summary {
+  font-size: 3.8vw;
+  font-weight: 800;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+summary {
+  margin-bottom: 1.4vw;
+}
+
+@media screen and (min-width: 600px) {
+  h1, p, details, summary {
+    font-size: 2.2vw;
+  }
+
+  summary {
+    margin-bottom: 0vw;
+  }
+
+  .last {
+    margin-bottom: 3vw;
+  }  
+
+  .last2 {
+    margin-bottom: 0vw;
+  } 
+}
+
+@media screen and (min-width: 900px) {
+  h1, p, details, summary {
+    font-size: 1.4vw;
+  }
+
+  summary {
+    margin-bottom: 0vw;
+  }
+
+  .last {
+    margin-bottom: 0vw;
+  }  
+
+  .last2 {
+    margin-bottom: 0vw;
+  }  
+}
+
+@media screen and (min-width: 1200px) {
+  h1, p, details, summary {
+    font-size: 1.4vw;
+  }
+
+  summary {
+    margin-bottom: 0vw;
+  }
+
+  .last {
+    margin-bottom: 0vw;
+  }  
+
+  .last2 {
+    margin-bottom: 0vw;
+  }  
+}
+
+summary:hover {
+  color: springgreen;
+  animation: blink-effect 0.6s step-end 0s infinite;
+  cursor: help;
+}
+
+@keyframes blink-effect {
+  50% {
+    color: white;
+    opacity: 1;
+  }
+} 
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+.move {
+  position: fixed;
+  bottom: 2.9%;
+  left: 2.5%;
+  border-radius: 100%;
+  width: 6rem;
+  height: 6rem;
+  background-color: black;
+}
+
+@media screen and (min-width: 600px) {
+  .move {
+   background-color: white;
+  }
+
+  h2 {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .move {
+   background-color: white;
+  }
+
+  h2 {
+   color: black;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .move {
+   background-color: white;
+  }
+
+  h2 {
+   color: black;
+  }  
+}
+
+.move:hover {
+  cursor: help;
+  -webkit-animation:spin 3s linear infinite;
+}
+
+@keyframes spin { 
+  100% { 
+    -webkit-transform: rotate(360deg); 
+    transform:rotate(360deg); 
+  }
+}
+
+/*bottom*/
+.bottom {
+  margin-bottom: 28vw;
+}
+
+@media screen and (min-width: 500px) {
+  .bottom {
+    margin-bottom: 28vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bottom {
+    margin-bottom: 8vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .bottom {
+    margin-bottom: 8vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bottom {
+    margin-bottom: 6vw;
+  }
+}

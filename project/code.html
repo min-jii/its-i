@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>이미지-2-텍스트-2-사운드-2-이미지</title>
+    <meta name="description" content="이미지-2-텍스트-2-사운드-2-이미지">
+    <meta name="keywords" content="ITS, 감각 언어로 번역하기, 감각의 재구성, 이미지, 텍스트, 사운드, 변환">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <style>
+    html {
+      cursor: help;
+    }
+
+    .imgcenter {
+      position: fixed;
+      width: 50vw;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: help;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 80vw;
+      height: auto;
+      background-color: white;
+      color: black;
+      text-align: center;
+      border-radius: 8px;
+      padding: 5px;
+      position: fixed;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .textcenter {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);     
+    }
+
+    h4 {
+      margin: 0;
+      padding: 0;
+      font-size: 4vw;
+      font-weight: 800;
+      line-height: 1.6;
+      word-break: keep-all;
+    }
+  </style>
+  <body>
+    <div class="tooltip">
+      <img class="txt image-main imgcenter" src="assets/images/img/code1.jpg" alt="code">
+      <span class="tooltiptext textcenter"><h4>https://min-jii.github.io/its/</h4></span>
+    </div>
+  </body>
+  </html>
